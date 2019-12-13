@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-1. Introduction
-2. History
-3. Major Methods/Attributes
-4. Example Project Code
-5. References
+1. [Introduction](#introduction)
+2. [History](#history)
+3. [Major Methods/Attributes](#major methods/attributes)
+4. [Example Project Code](#example project code)
+5. [References](#references)
 
 ## Introduction 
 
@@ -28,18 +28,18 @@ The major methods that are needed to use this widget are the following:
 - public CursorAdapter getSuggestionsAdapter()
 - public boolean isIconified()
 - public boolean setIconifiedByDefault(true): this is when the searchbar is used as a ActionBar, to view as a action view. It provides the option of collapsing/expanding the view by changing the boolean value of this method to (true), and vice-versa for a fixed view of the searchview at all times.
-- setOnSuggestionListener(SearchView.OnSuggestionListener listener) : this acknowledges when a suggestion is focused or clicked by the user, that opos up while the user is is typying or their is detection of inactivity on the view itself.
+- setOnSuggestionListener(SearchView.OnSuggestionListener listener) : this acknowledges when a suggestion is focused or clicked by the user, that pops up while the user is is typing or their is detection of inactivity on the view itself.
 - setOnCloseListener : this sets a listener to be informed when the user closes the SearchView or the view is collapsed.
 - setOnQueryTextFocusChangeListener(View.OnFocusChangeListner listner): this detects when the focus/context of the query changes in the searchbar or the user types in something new.
-- setOnQueryTextListener : sets a listner for actions the user takes while using the view.
-- setOnSearchClickListener: the view sets up a listener to be informaed when the "Search" button is pressed 
+- setOnQueryTextListener : sets a listener for actions the user takes while using the view.
+- setOnSearchClickListener: the view sets up a listener to be informed when the "Search" button is pressed 
 
 
-So, onQueryTextSubmit is used to search a query based on waht the usertypes into the searchbar at the time of the submission. While, onQueryTextChange provides real-time updates of the user selections as they are typed into the searchbar layout. It basically searches the query, and automatically changes context if the user types a new letter, and as they enter new desired results, the searchview changes to the expected results from the query.There are 2 main types of methods used for the SearchView widget as mentioned here. 
+So, onQueryTextSubmit is used to search a query based on waht the user types into the searchbar at the time of the submission. While, onQueryTextChange provides real-time updates of the user selections as they are typed into the searchbar layout. It basically searches the query, and automatically changes context if the user types a new letter, and as they enter new desired results, the searchview changes to the expected results from the query.There are 2 main types of methods used for the SearchView widget as mentioned here. 
 
 ### Attributes
 
-- Id: this is sused to identify a SearchView to be used later on for other purposes.
+- Id: this is used to identify a SearchView to be used later on for other purposes.
 - queryHint - this sets a query hint using a String, in the SearchView.
 - iconifiedByDefault - sets a true(expandable view for the view) or, default state where the the SearchView is visible at all times.
 - background - this can be used to set a specific background color for the SearchView, or image.
@@ -77,6 +77,6 @@ So, onQueryTextSubmit is used to search a query based on waht the usertypes into
 
 ## References
 
-https://developer.android.com/reference/android/widget/SearchView
-https://androidmonks.com/searchview/
+* https://developer.android.com/reference/android/widget/SearchView
+* https://androidmonks.com/searchview/
 
