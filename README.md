@@ -77,4 +77,6 @@ So, onQueryTextSubmit is used to search a query based on waht the usertypes into
 
 ## References
 
+https://developer.android.com/reference/android/widget/SearchView
+https://androidmonks.com/searchview/
 
