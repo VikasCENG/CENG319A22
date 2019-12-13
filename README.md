@@ -50,7 +50,12 @@ So, onQueryTextSubmit is used to search a query based on waht the usertypes into
 
 ### Methods Used
 
----
+```
+            @Override
+            public boolean onQueryTextSubmit(String query) { // when the query is submitted
+                Toast.makeText(getApplicationContext(), "You searched" + query,Toast.LENGTH_SHORT).show(); // display this toast message with the query that is entered by the user
+                return false;
+            }
 
             @Override
             public boolean onQueryTextChange(String newText) { // used to check query and automatically change context while the user types into the searchbar
@@ -60,7 +65,8 @@ So, onQueryTextSubmit is used to search a query based on waht the usertypes into
             }
         });
 
----
+
+```
 
 ## References
 
