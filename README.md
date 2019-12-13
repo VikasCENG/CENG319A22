@@ -4,7 +4,7 @@
 
 1. [Introduction](#introduction)
 2. [History](#history)
-3. [Major Methods/Attributes](#major-methods-attributes)
+3. [Major Methods/Attributes](#major-methods/attributes)
 4. [Example Project Code](#example-project-code)
 5. [References](#references)
 
