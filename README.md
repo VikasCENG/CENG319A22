@@ -67,6 +67,13 @@ So, onQueryTextSubmit is used to search a query based on waht the usertypes into
 
 
 ```
+### Attributes Used
+```
+
+ android:queryHint="Search Courses"
+ android:iconifiedByDefault="true"
+
+```
 
 ## References
 
