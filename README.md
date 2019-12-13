@@ -48,6 +48,22 @@ So, onQueryTextSubmit is used to search a query based on waht the usertypes into
 
 ## Example Project Code
 
+### Methods Used
+
+---
+@Override
+public boolean onQueryTextSubmit(String query) { // when the query is submitted
+Toast.makeText(getApplicationContext(), "You searched" + query,Toast.LENGTH_SHORT).show(); // display this toast message with the query that is entered by the user
+return false;
+}
+@Override
+public boolean onQueryTextChange(String newText) { // used to check query and automatically change context while the user types into the searchbar
+adapter.getFilter().filter(newText); // takes the items in the list, and filters through the listview,only showing the filtered items Toast.makeText(getApplicationContext(), "Were you trying to search for.." + list1 + "?", Toast.LENGTH_SHORT).show();
+return false;
+            }
+        });
+---
+
 ## References
 
 
